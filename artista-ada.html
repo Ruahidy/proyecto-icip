@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expediente: Ada Balcácer | Banco de Memoria ICIP</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+        /* ESTILOS ESPECÍFICOS PARA LA FICHA */
+        .artist-hero {
+            padding: 120px 0 60px;
+            background: #f9f9f9;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .artist-header-grid {
+            display: grid; grid-template-columns: 1fr 300px; gap: 60px; align-items: center;
+        }
+
+        .artist-meta .tagline { color: var(--gold); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; font-size: 0.9rem; }
+        .artist-meta h1 { font-size: 3.5rem; margin: 10px 0; line-height: 1.1; color: var(--navy-dark); }
+        .artist-meta .lead { font-size: 1.4rem; color: #666; font-family: 'Playfair Display', serif; font-style: italic; }
+
+        .artist-photo-frame {
+            position: relative;
+        }
+        .artist-photo-frame img {
+            width: 100%; border-radius: 4px; box-shadow: 20px 20px 0 rgba(10,25,47,0.05);
+            filter: grayscale(100%); transition: 0.5s;
+        }
+        .artist-photo-frame:hover img { filter: grayscale(0%); }
+
+        /* Estilos para el Video */
+        .video-container {
+            position: relative; padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0; overflow: hidden; background: #000; border-radius: 4px; margin-bottom: 15px;
+        }
+        .video-container iframe {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
+        }
+
+        /* Sección de Comentarios (Giscus) */
+        .dialogue-section {
+            margin-top: 80px; padding-top: 60px; border-top: 1px solid #eee;
+        }
+        .dialogue-intro { margin-bottom: 40px; text-align: center; }
+
+        @media (max-width: 900px) {
+            .artist-header-grid { grid-template-columns: 1fr; }
+            .artist-photo-frame { max-width: 300px; margin: 0 auto; }
+            .artist-meta h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header id="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Logo ICIP" style="height: 45px; width: auto; vertical-align: middle;">
+                </a>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="index.html#expertise">Expertise</a></li>
+                    <li><a href="index.html#actualidad">Actualidad</a></li>
+                    <li><a href="educacion.html">Educación</a></li>
+                    <li><a href="memoria.html">BMMC</a></li> 
+                    <li><a href="index.html#contacto" class="btn-nav">Contactar</a></li>
+                </ul>
+                
+                <div class="lang-switch">
+                    <span class="active">ES</span>
+                    <span class="divider">|</span>
+                    <span>EN</span>
+                </div>
+    
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div> </header>
+
+    <section class="artist-hero">
+        <div class="container artist-header-grid fade-in">
+            <div class="artist-meta">
+                <span class="tagline">Expediente Técnico #001</span>
+                <h1 class="display-title">Ada Balcácer</h1>
+                <p class="lead">Serie: "Luz Tropical" (2020-2025)</p>
+                <p style="margin-top: 20px; color: #555; max-width: 600px;">
+                    Documentación técnica sobre los materiales, procesos y la voluntad expresa de la artista respecto a la conservación futura de esta serie pictórica.
+                </p>
+            </div>
+            <div class="artist-photo-frame">
+                <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?auto=format&fit=crop&w=600&q=80" alt="Ada Balcácer">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-padding">
+        <div class="container" style="max-width: 800px;">
+            
+            <details class="premium-accordion fade-in">
+                <summary>
+                    <span class="acc-number">01</span>
+                    <span class="acc-title">Materiales y Marcas</span>
+                    <span class="acc-icon">+</span>
+                </summary>
+                <div class="acc-body">
+                    <p><strong>Soporte:</strong> Lino crudo belga preparado manualmente.</p>
+                    <p><strong>Imprimación:</strong> <span class="tooltip" title="Adhesivo tradicional proteico">Cola de conejo</span> (fórmula tradicional) y Gesso acrílico Liquitex (2 capas).</p>
+                    <p><strong>Pigmentos:</strong> Óleos marca <em>Old Holland</em>. Colores predominantes: Verde Viridián, Amarillo de Nápoles, Azul Cobalto.</p>
+                    <p><strong>Médium:</strong> Aceite de linaza espesado al sol (Sun-thickened linseed oil).</p>
+                </div>
+            </details>
+
+            <details class="premium-accordion fade-in">
+                <summary>
+                    <span class="acc-number">02</span>
+                    <span class="acc-title">Protocolo de Conservación</span>
+                    <span class="acc-icon">+</span>
+                </summary>
+                <div class="acc-body">
+                    <blockquote>"El craquelado en las zonas de empaste grueso es intencional y busca reflejar la sequedad del trópico. No consolidar a menos que haya desprendimiento activo."</blockquote>
+                    <p><strong>Limpieza:</strong> Mecánica suave con brocha de pelo de cabra. Evitar solventes acuosos en las zonas de veladura.</p>
+                    <p><strong>Barniz:</strong> La obra no posee barniz final. La artista prefiere el acabado mate-satinado natural del óleo.</p>
+                </div>
+            </details>
+
+            <details class="premium-accordion fade-in">
+                <summary>
+                    <span class="acc-number">03</span>
+                    <span class="acc-title">Entrevista / Multimedia</span>
+                    <span class="acc-icon">+</span>
+                </summary>
+                <div class="acc-body">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                    </div>
+                    <p class="caption">Entrevista realizada en Santo Domingo, 14 de Febrero 2026.</p>
+                </div>
+            </details>
+
+        </div>
+
+        <div class="container dialogue-section fade-in" style="max-width: 800px;">
+            <div class="dialogue-intro">
+                <h2 style="font-family: 'Playfair Display'; margin-bottom: 10px;">Diálogo Técnico</h2>
+                <p>Espacio para consultas entre conservadores, investigadores y el estudio del artista.</p>
+            </div>
+
+            <div class="giscus"></div>
+            <script src="https://giscus.app/client.js"
+                data-repo="TU_USUARIO/TU_REPO"
+                data-repo-id="TU_REPO_ID"
+                data-category="General"
+                data-category-id="TU_CATEGORY_ID"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="top"
+                data-theme="light"
+                data-lang="es"
+                crossorigin="anonymous"
+                async>
+            </script>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 ICIP. Banco de Memoria Material.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
