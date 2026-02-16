@@ -3,88 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="El Instituto para la Conservación e Investigación del Patrimonio (ICIP) es la referencia nacional en ciencia aplicada a la restauración.">
+    <meta name="description" content="ICIP | Instituto para la Conservación e Investigación del Patrimonio. Ciencia aplicada a la memoria histórica.">
+    <title>ICIP | Excellence in Heritage Conservation</title>
     
-    <title>ICIP | Instituto para la Conservación e Investigación del Patrimonio</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
+    <header id="navbar">
+        <div class="container nav-wrapper">
+            <a href="#" class="brand">ICIP<span class="dot">.</span></a>
+            
             <nav>
-                <div class="logo">ICIP <span>Patrimonio</span></div>
-                <ul class="nav-links">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#contacto" class="btn-acceso">Contacto</a></li>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#journal">Journal</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#contacto" class="btn-nav">Contactar</a></li>
                 </ul>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
+                <div class="lang-switch">
+                    <span class="active">ES</span>
+                    <span class="divider">/</span>
+                    <span>EN</span>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
             </nav>
         </div>
     </header>
 
     <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Ciencia Aplicada al Patrimonio Cultural</h1>
-            <p>Diagnóstico, conservación preventiva e investigación para la memoria histórica.</p>
-            <a href="#contacto" class="btn-hero">Solicitar Diagnóstico</a>
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content fade-in">
+            <span class="overline">Est. 2026 — Santo Domingo</span>
+            <h1 class="display-title">Ciencia aplicada a la<br><em>memoria histórica</em>.</h1>
+            <p class="lead">Liderando la investigación científica y la gestión de riesgos para colecciones de valor incalculable en el Caribe.</p>
+            <div class="hero-actions">
+                <a href="#contacto" class="btn-primary">Solicitar Diagnóstico</a>
+                <a href="#expertise" class="btn-text">Explorar Servicios &darr;</a>
+            </div>
         </div>
     </section>
 
-    <section id="servicios">
+    <div class="partners-strip">
         <div class="container">
-            <h2 class="section-title">Nuestros Servicios</h2>
-            <div class="servicios-grid">
-                <div class="servicio-card">
-                    <h3>Diagnóstico Científico</h3>
-                    <p>Análisis de materiales y patologías mediante técnicas no destructivas.</p>
+            <p class="strip-label">Colaboraciones Institucionales</p>
+            <div class="partners-grid">
+                <span>ICOMOS</span>
+                <span>GETTY CONSERVATION</span>
+                <span>UNESCO</span>
+                <span>IPCE</span>
+                <span>UASD</span>
+            </div>
+        </div>
+    </div>
+
+    <section id="expertise" class="section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-subtitle">Nuestro Enfoque</span>
+                <h2 class="section-title">Preservación<br>Científica</h2>
+            </div>
+            
+            <div class="grid-3">
+                <div class="service-card fade-in">
+                    <span class="service-num">01</span>
+                    <h3>Diagnóstico Multiespectral</h3>
+                    <p>Análisis no destructivo mediante fluorescencia de rayos X e imagenología para la identificación precisa de patologías.</p>
+                    <a href="#" class="link-arrow">Ver metodología &rarr;</a>
                 </div>
-                <div class="servicio-card">
-                    <h3>Restauración</h3>
-                    <p>Intervención directa en bienes muebles con criterios internacionales.</p>
+                <div class="service-card fade-in">
+                    <span class="service-num">02</span>
+                    <h3>Restauración Ética</h3>
+                    <p>Intervenciones directas bajo estándares internacionales de mínima intervención y reversibilidad total.</p>
+                    <a href="#" class="link-arrow">Ver portafolio &rarr;</a>
                 </div>
-                <div class="servicio-card">
+                <div class="service-card fade-in">
+                    <span class="service-num">03</span>
                     <h3>Gestión de Colecciones</h3>
-                    <p>Inventario, catalogación y planes de conservación preventiva.</p>
+                    <p>Planes directores de conservación preventiva, control climático y diseño de almacenes visitables.</p>
+                    <a href="#" class="link-arrow">Consultar servicios &rarr;</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contacto">
+    <section id="journal" class="section-padding bg-cream">
         <div class="container">
-            <h2 class="section-title">Contacto Institucional</h2>
-            <div class="contacto-wrapper">
-                <form action="https://formspree.io/f/TU_ID_AQUI" method="POST">
-                    <div class="form-group">
-                        <label for="nombre">Nombre Completo</label>
-                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Dr. / Lic. ..." required>
+            <div class="journal-header fade-in">
+                <h2 class="section-title">ICIP Journal</h2>
+                <a href="#" class="btn-outline-dark">Ver todas las publicaciones</a>
+            </div>
+            
+            <div class="journal-grid">
+                <article class="journal-entry fade-in">
+                    <div class="journal-img" style="background-color: #d1d5db;"></div>
+                    <div class="journal-meta">
+                        <span class="category">Conferencia</span>
+                        <span class="date">12 Dic, 2026</span>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Correo Institucional</label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="correo@institucion.edu" required>
+                    <h3>NUCLEART RD: Tecnología Nuclear aplicada al Arte</h3>
+                </article>
+                <article class="journal-entry fade-in">
+                    <div class="journal-img" style="background-color: #9ca3af;"></div>
+                    <div class="journal-meta">
+                        <span class="category">Institucional</span>
+                        <span class="date">05 Nov, 2026</span>
                     </div>
-                    <div class="form-group">
-                        <label for="mensaje">Consulta o Solicitud</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" class="form-control" placeholder="Describa su consulta técnica..." required></textarea>
+                    <h3>Alianza Estratégica con el Instituto de Oslo</h3>
+                </article>
+                <article class="journal-entry fade-in">
+                    <div class="journal-img" style="background-color: #6b7280;"></div>
+                    <div class="journal-meta">
+                        <span class="category">Investigación</span>
+                        <span class="date">20 Oct, 2026</span>
                     </div>
-                    <button type="submit" class="btn-enviar">Enviar Consulta</button>
+                    <h3>Biodeterioro en Climas Tropicales: Nuevo Paper</h3>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="recursos" class="cta-section">
+        <div class="container cta-content fade-in">
+            <h2>Centro de Recursos</h2>
+            <p>Acceda a nuestras guías técnicas de manipulación, protocolos de embalaje y estándares ISO.</p>
+            <a href="#" class="btn-white">Acceder a la Biblioteca</a>
+        </div>
+    </section>
+
+    <section id="contacto" class="section-padding bg-dark">
+        <div class="container contact-wrapper">
+            <div class="contact-info fade-in">
+                <span class="contact-label">Contacto</span>
+                <h2 class="contact-title">Inicie un proyecto<br>de conservación.</h2>
+                <address>
+                    <p>Santo Domingo, Rep. Dominicana</p>
+                    <p><a href="mailto:contacto@icip.do">contacto@icip.do</a></p>
+                    <p>+1 (809) 555-0123</p>
+                </address>
+            </div>
+            <div class="contact-form-wrapper fade-in">
+                <form action="https://formspree.io/f/TU_ID_AQUI" method="POST" class="minimal-form">
+                    <div class="form-row">
+                        <input type="text" name="nombre" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="email" name="email" placeholder="Correo institucional" required>
+                    </div>
+                    <div class="form-row">
+                        <textarea name="mensaje" rows="4" placeholder="Detalles de la consulta..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-gold">Enviar Solicitud</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 ICIP - Instituto para la Conservación e Investigación del Patrimonio.</p>
+    <footer class="main-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-sm">ICIP.</span>
+                <p>&copy; 2026 Instituto para la Conservación e Investigación del Patrimonio.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
         </div>
     </footer>
 
